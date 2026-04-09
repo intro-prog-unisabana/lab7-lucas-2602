@@ -14,7 +14,10 @@ def encrypt_single_pass(filename: str) -> None:
 
 def encrypt_passwords_in_file(filename: str) -> None:
     """TODO: Parte 2."""
-    pass
+    with open(filename, mode="r") as file:
+        linea = csv.reader(file)
+        for fila in linea:
+            print(fila)
 
 
 def change_password(filename: str, website: str, password: str) -> bool:
@@ -28,3 +31,4 @@ def add_login(filename: str, website_name: str, username: str, password: str) ->
 
 
 encrypt_single_pass("examples/example1.txt")
+encrypt_passwords_in_file("examples/example2.csv")

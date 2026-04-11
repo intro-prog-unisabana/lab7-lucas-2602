@@ -3,7 +3,8 @@ from password_manager import add_login, change_password, encrypt_passwords_in_fi
 
 def main() -> None:
     """TODO: Parte 5 - programa principal interactivo."""
-    pass
+    nombre_archivo = input("Enter the CSV file name:\n")
+    encrypt_passwords_in_file(nombre_archivo)
 
 
 if __name__ == "__main__":

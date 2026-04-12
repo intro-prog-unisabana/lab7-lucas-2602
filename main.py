@@ -38,7 +38,7 @@ def main() -> None:
 
         elif entrada == "3":
             break
-
+        
         else:
             print("Invalid option selected!")
             continue

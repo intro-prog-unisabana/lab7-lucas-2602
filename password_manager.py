@@ -54,4 +54,4 @@ def add_login(filename: str, website_name: str, username: str, password: str) ->
     contraseña_encriptada = caesar_encrypt(password)
     with open(filename, mode="a") as file:
         escritor = csv.writer(file)
-        escritor.writerow(website_name, username, contraseña_encriptada)
+        escritor.writerow([website_name, username, contraseña_encriptada])
